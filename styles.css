@@ -5,8 +5,31 @@ html {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
 }
 
 ul {
     list-style: none;
+}
+
+img#hero {
+    width: 100%;
+}
+
+img.about {
+    width: 50%;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start;
+    max-width: 20vw;
+}
+
+header {
+    background-color: #1B4369;
+}
+
+footer {
+    background-color: #1B4369;
 }
