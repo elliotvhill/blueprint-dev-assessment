@@ -9,10 +9,20 @@ body {
     margin: 0 auto;
 }
 
-ul {
+header ul {
     list-style: none;
     padding: 0.25em;
     margin: 0.25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: 3rem;
 }
 
 img#hero {
@@ -44,10 +54,10 @@ footer {
     margin: 0.25em;
 }
 
-#socials a:hover {
+/* #socials a:hover {
     background-color: white;
     color: #27527a;
-}
+} */
 
 button {
     font-weight: bold;
