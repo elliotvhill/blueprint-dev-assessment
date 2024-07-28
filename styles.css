@@ -6,10 +6,13 @@ html {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100vw;
+    margin: 0 auto;
 }
 
 ul {
     list-style: none;
+    padding: 0.25em;
+    margin: 0.25em;
 }
 
 img#hero {
@@ -27,9 +30,48 @@ img.about {
 }
 
 header {
-    background-color: #1B4369;
+    background: linear-gradient(45deg, #1B4369, #3E8DBE);
 }
 
 footer {
     background-color: #1B4369;
+    color: #fff;
+}
+
+#socials a {
+    color: white;
+    padding: 0.25em;
+    margin: 0.25em;
+}
+
+#socials a:hover {
+    background-color: white;
+    color: #27527a;
+}
+
+button {
+    font-weight: bold;
+    padding: 0.6rem;
+    margin: 0.5rem 0.25rem;
+    border-radius: 20px;
+    border: none;
+}
+
+button#volunteer {
+    background-color: #EFBA43;
+    color: #001E50;
+    text-transform: uppercase;
+}
+
+button#donate {
+    background-color: #B32A36;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+button#signup {
+    width: 30vw;
+    background-color: #88D4FB;
+    color: #10274C;
+    text-transform: uppercase;
 }
