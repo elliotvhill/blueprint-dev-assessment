@@ -9,6 +9,10 @@ body {
     margin: 0 auto;
 }
 
+main {
+    margin: 1rem;
+}
+
 header ul {
     list-style: none;
     padding: 0.25em;
@@ -22,6 +26,7 @@ header ul {
     display: flex;
     flex-direction: row;
     justify-content: right;
+    align-items: center;
     height: 3rem;
 }
 
@@ -41,21 +46,60 @@ img.about {
 
 header {
     background: linear-gradient(45deg, #1B4369, #3E8DBE);
+    width: 100%;
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #1B4369;
+    color: #fff;
+    margin-bottom: -20px;
+    padding: 1rem;
+    font-size: 0.7rem;
+}
+
+footer a {
     color: #fff;
 }
 
-#socials a {
-    color: white;
-    padding: 0.25em;
-    margin: 0.25em;
+#footer-right {
+    align-items: flex-end;
+    align-self: flex-end;
 }
 
-/* #socials a:hover {
-    background-color: white;
+#footer-left {
+    align-items: flex-start;
+    align-self: center;
+}
+
+#disclaimer {
+    border: 2px solid #fff;
+    padding: 0.5rem 3rem;
+}
+
+.legal {
+    display: inline-block;
+    position: relative;
+    bottom: 0px;
+    left: 180px;
+    margin-top: -10px;
+}
+
+#socials img {
+    border-radius: 100px;
+    height: 100%;
+    vertical-align: middle;
+    padding: 0;
+}
+
+#socials {
+    margin-right: 1em;
+}
+
+/* #socials img:hover {
+    box-shadow: 2px 2px 4px #27527a;
     color: #27527a;
 } */
 
