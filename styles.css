@@ -221,7 +221,7 @@ button:hover {
 
 button#volunteer,
 button#donate,
-button#signup {
+button#signup-btn {
     text-transform: uppercase;
 }
 
@@ -235,7 +235,7 @@ button#donate {
     color: #fff;
 }
 
-button#signup {
+button#signup-btn {
     width: 30vw;
     background-color: #88d4fb;
     color: #10274c;
