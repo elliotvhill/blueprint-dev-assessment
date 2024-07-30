@@ -48,6 +48,8 @@ header ul {
 }
 
 img#hero {
+    position: relative;
+    z-index: -1;
     width: 100%;
 }
 
@@ -66,11 +68,21 @@ header {
     background: linear-gradient(45deg, #1B4369, #3E8DBE);
     width: 100%;
     margin-bottom: -5px;
-    /* box-shadow: 2px 1px 6px #323232; */
+    box-shadow: 2px 1px 6px #323232;
+}
+
+.hero-banner {
+    display: inline-block;
+    height: 40vh;
+    width: 100vw;
 }
 
 #banner-left {
-    border: 50px red, 50px blue, 50px green, 50px magenta;
+    position: absolute;
+    z-index: 1;
+    border-top: 0px solid transparent;
+    border-right: 0px solid transparent;
+    /* height: 100%; */
     width: 40vw;
     background: linear-gradient(60deg, #1F4D7F, #306084 65%, #8C9C89 99%);
     padding: 2rem 1rem;
@@ -169,10 +181,11 @@ button#signup {
 }
 
 .donate {
-    width: 70vw;
-    margin: 0 auto;
-    padding: 1rem 4rem;
     background: linear-gradient(80deg, #1F4D7F 25%, #23558C 75%, #3D687A 90%);
+    position: relative;
+    margin: 0 auto;
+    max-width: 70vw;
+    padding: 1rem 4rem;
 }
 
 #donations-btns {
