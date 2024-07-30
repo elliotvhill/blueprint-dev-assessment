@@ -15,11 +15,28 @@ main {
 
 header ul {
     list-style: none;
-    padding: 0.25em;
+    padding: 0.25em 0;
     margin: 0.25em;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+.header {
+    width: 100%;
+    display: inline-flex;
+}
+
+#header-left {
+    display: inline-flex;
+    align-items: flex-start;
+    align-self: center;
+    padding: 1rem;
+}
+
+#header-right {
+    display: inline-flex;
+    align-items: flex-end;
 }
 
 .header-btns {
@@ -47,6 +64,27 @@ img.about {
 header {
     background: linear-gradient(45deg, #1B4369, #3E8DBE);
     width: 100%;
+    margin-bottom: -5px;
+    /* box-shadow: 2px 1px 6px #323232; */
+}
+
+#banner-left {
+    border: 50px red, 50px blue, 50px green, 50px magenta;
+    width: 40vw;
+    background: linear-gradient(60deg, #1F4D7F, #306084 65%, #8C9C89 99%);
+    padding: 2rem 1rem;
+    color: #fff;
+}
+
+.heading {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: bold;
+    font-family: "Bebas Neue", Impact, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.05rem;
 }
 
 footer {
@@ -55,9 +93,9 @@ footer {
     justify-content: space-between;
     background-color: #1B4369;
     color: #fff;
-    margin-bottom: -20px;
     padding: 1rem;
     font-size: 0.7rem;
+    height: 25vh;
 }
 
 footer a {
@@ -98,16 +136,10 @@ footer a {
     margin-right: 1em;
 }
 
-/* #socials img:hover {
-    box-shadow: 2px 2px 4px #27527a;
-    color: #27527a;
-} */
-
 button {
     font-weight: bold;
     padding: 0.6rem;
     margin: 0.5rem 0.25rem;
-    border-radius: 20px;
     border: none;
 }
 
@@ -128,4 +160,42 @@ button#signup {
     background-color: #88D4FB;
     color: #10274C;
     text-transform: uppercase;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+.donate {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    background: linear-gradient(60deg, #1F4D7F, #306084 65%, #8C9C89 99%);
+}
+
+#donations-btns {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+#donations {
+    color: #fff;
+}
+
+.donations-btn {
+    width: 14rem;
+    background-color: #183E66;
+    color: #fff;
+    border: 3px solid #89D5FB;
+    font-size: 1.2rem;
+}
+
+.dollarsign {
+    font-size: 0.8rem;
+    vertical-align: text-top;
 }

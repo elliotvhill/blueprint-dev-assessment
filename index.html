@@ -6,7 +6,6 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0"
         />
-        <title>Samantha Hall</title>
         <meta
             name="description"
             content="Landing page for Samantha Hall for Senate Campaign"
@@ -15,102 +14,173 @@
             rel="stylesheet"
             href="styles.css"
         />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+            rel="stylesheet"
+        />
+        <title>Samantha Hall</title>
     </head>
     <body>
         <header>
-            <div id="header">
-                <img
-                    id="header-logo"
-                    src="source-files/SamanthaHall_Logo_reversed.png"
-                    alt="Saantha Hall Democrate for Senate logo"
-                    class="logo"
-                />
-                <ul id="socials">
-                    <li class="header-btns">
-                        <button id="volunteer">Volunteer</button>
-                    </li>
-                    <li class="header-btns">
-                        <button id="donate">Donate</button>
-                    </li>
-                    <li
-                        id="facebook"
-                        class="socials"
-                    >
-                        <a href="#"
-                            ><img
-                                id="facebook"
-                                src="source-files/Social-icons/Facebook.svg"
-                        /></a>
-                    </li>
-                    <li
-                        id="twitter"
-                        class="socials"
-                    >
-                        <a href="#"
-                            ><img
-                                id="twitter"
-                                src="source-files/Social-icons/Twitter.svg"
-                        /></a>
-                    </li>
-                    <li
-                        id="instagram"
-                        class="socials"
-                    >
-                        <a href="#"
-                            ><img
-                                id="instagram"
-                                src="source-files/Social-icons/IG.svg"
-                        /></a>
-                    </li>
-                </ul>
+            <div class="header">
+                <div
+                    id="header-left"
+                    class="header"
+                >
+                    <img
+                        id="header-logo"
+                        src="source-files/SamanthaHall_Logo_reversed.png"
+                        alt="Saantha Hall Democrate for Senate logo"
+                        class="logo"
+                    />
+                </div>
+                <div
+                    id="header-right"
+                    class="header"
+                >
+                    <ul id="socials">
+                        <li class="header-btns">
+                            <button
+                                id="volunteer"
+                                class="rounded"
+                            >
+                                Volunteer
+                            </button>
+                        </li>
+                        <li class="header-btns">
+                            <button
+                                id="donate"
+                                class="rounded"
+                            >
+                                Donate
+                            </button>
+                        </li>
+                        <li
+                            id="facebook"
+                            class="socials"
+                        >
+                            <a href="#"
+                                ><img
+                                    id="facebook"
+                                    src="source-files/Social-icons/Facebook.svg"
+                            /></a>
+                        </li>
+                        <li
+                            id="twitter"
+                            class="socials"
+                        >
+                            <a href="#"
+                                ><img
+                                    id="twitter"
+                                    src="source-files/Social-icons/Twitter.svg"
+                            /></a>
+                        </li>
+                        <li
+                            id="instagram"
+                            class="socials"
+                        >
+                            <a href="#"
+                                ><img
+                                    id="instagram"
+                                    src="source-files/Social-icons/IG.svg"
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <div class="hero-banner">
-            <img
-                id="hero"
-                src="source-files/hero.png"
-                alt="A photo of Senate Candidate Samantha Hall in a black suit in front of a riverside cityscape."
-            />
-            <form
-                action=""
-                id="sign-up"
-            >
-                <heading>Stay in touch with Samantha</heading>
-                <label for="email`"
-                    ><input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                /></label>
-                <label for="phone`"
-                    ><input
-                        type="text"
-                        name="phone`"
-                        id="phone"
-                        placeholder="Phone"
-                /></label>
-                <label for="zip-code`"
-                    ><input
-                        type="text"
-                        name="zip-code`"
-                        id="zip-code"
-                        placeholder="ZIP"
-                /></label>
-                <button
-                    id="signup"
-                    type="submit"
+            <div id="banner-right">
+                <img
+                    id="hero"
+                    src="source-files/hero.png"
+                    alt="A photo of Senate Candidate Samantha Hall in a black suit in front of a riverside cityscape."
+                />
+            </div>
+            <div id="banner-left">
+                <form
+                    action="#"
+                    id="sign-up"
                 >
-                    Sign Up
-                </button>
-            </form>
+                    <heading
+                        class="heading"
+                        id="contact"
+                        >Stay in touch with Samantha</heading
+                    >
+                    <label for="email`"
+                        ><input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Email"
+                    /></label>
+                    <label for="phone`"
+                        ><input
+                            type="text"
+                            name="phone`"
+                            id="phone"
+                            placeholder="Phone"
+                    /></label>
+                    <label for="zip-code`"
+                        ><input
+                            type="text"
+                            name="zip-code`"
+                            id="zip-code"
+                            placeholder="ZIP"
+                    /></label>
+                    <button
+                        id="signup"
+                        class="rounded"
+                        type="submit"
+                    >
+                        Sign Up
+                    </button>
+                </form>
+            </div>
         </div>
         <main>
             <section id="donate">
-                <heading>Donate to support Samantha's campaign</heading>
+                <div class="donate">
+                    <heading
+                        class="heading"
+                        id="donations"
+                        >Donate to support Samantha's campaign</heading
+                    >
+                    <ul id="donations-btns">
+                        <li>
+                            <button class="donations-btn">
+                                <span class="dollarsign">$ </span>25
+                            </button>
+                        </li>
+                        <li><button class="donations-btn">Other</button></li>
+                        <li>
+                            <button class="donations-btn">
+                                <span class="dollarsign">$ </span>50
+                            </button>
+                        </li>
+                        <li>
+                            <button class="donations-btn">
+                                <span class="dollarsign">$ </span>100
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section id="about">
-                <heading>Meet Samantha</heading>
+                <heading
+                    class="heading"
+                    id="about"
+                    >Meet Samantha</heading
+                >
                 <figure>
                     <img
                         id="about-1"
