@@ -211,6 +211,14 @@ button {
     border: none;
 }
 
+button:hover {
+    box-shadow: 0 0 4px #fff;
+}
+
+.socials img:hover {
+    box-shadow: 0 0 4px #fff;
+}
+
 button#volunteer,
 button#donate,
 button#signup {
