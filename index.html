@@ -116,7 +116,7 @@
                         class="fa-solid fa-bars"
                         style="color: #ffffff"
                         id="ham-menu"
-                        onclick=showMobileMenu()
+                        onclick="showMobileMenu()"
                     ></i>
                 </div>
             </div>
@@ -131,7 +131,8 @@
                 />
                 <div id="form-container">
                     <form
-                        action="#"
+                        method="post"
+                        action="https://docs.google.com/spreadsheets/d/1-ofXjoygbe72LdGeEDxAgTFOdb1UL4DLWRQUyHxOkTY/edit"
                         id="sign-up"
                     >
                         <heading
@@ -139,29 +140,29 @@
                             id="contact"
                             >Stay in touch with Samantha</heading
                         >
-                        <label for="email`"
+                        <label for="email"
                             ><input
                                 type="email"
                                 name="email"
                                 id="email"
                                 placeholder="Email"
                         /></label>
-                        <label for="phone`"
+                        <label for="phone"
                             ><input
                                 type="text"
-                                name="phone`"
+                                name="phone"
                                 id="phone"
                                 placeholder="Phone"
                         /></label>
-                        <label for="zip-code`"
+                        <label for="zip-code"
                             ><input
                                 type="text"
-                                name="zip-code`"
+                                name="zip-code"
                                 id="zip-code"
                                 placeholder="ZIP"
                         /></label>
                         <button
-                            id="signup"
+                            id="signup-btn"
                             class="rounded"
                             type="submit"
                         >
@@ -212,12 +213,12 @@
                     id="about-heading"
                     >Meet Samantha</heading
                 >
-                    <img
-                        id="about-1"
-                        src="source-files/about-photo_2.png"
-                        alt="A blue user icon superimposed over a blurred green background."
-                        class="about"
-                    />
+                <img
+                    id="about-1"
+                    src="source-files/about-photo_2.png"
+                    alt="A blue user icon superimposed over a blurred green background."
+                    class="about"
+                />
                 <p class="about">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Impedit deserunt distinctio dolore reiciendis id nihil
@@ -231,12 +232,12 @@
                     nihil dolores. Eius deserunt molestiae minima architecto
                     voluptas!
                 </p>
-                    <img
-                        src="source-files/about-photo_1.jpg"
-                        alt="A group of four colleagues chatting in front of a spiral staircase. One is seated on a desk, one is in a wheelchair, one is seated in an office chair, and one is standing."
-                        id="about-2"
-                        class="about"
-                    />
+                <img
+                    src="source-files/about-photo_1.jpg"
+                    alt="A group of four colleagues chatting in front of a spiral staircase. One is seated on a desk, one is in a wheelchair, one is seated in an office chair, and one is standing."
+                    id="about-2"
+                    class="about"
+                />
             </section>
         </main>
         <footer>
@@ -260,7 +261,10 @@
                 <span class="legal"><p id="copyright">&copy; 2024</p></span>
             </div>
         </footer>
-        <script src="https://kit.fontawesome.com/db1ff0de8c.js" crossorigin="anonymous"></script>
+        <script
+            src="https://kit.fontawesome.com/db1ff0de8c.js"
+            crossorigin="anonymous"
+        ></script>
         <script src="script.js"></script>
     </body>
 </html>
