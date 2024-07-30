@@ -29,23 +29,18 @@ header ul {
 
 #header-left {
     display: inline-flex;
-    align-items: flex-start;
-    align-self: center;
+    justify-content: flex-start;
+    align-items: center;
     padding: 1rem;
 }
 
 #header-right {
-    display: inline-flex;
-    align-items: flex-end;
+    max-height: 8vh;
 }
 
-.header-btns {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
+/* .header-btns {
     height: 3rem;
-}
+} */
 
 img#hero {
     position: relative;
@@ -78,6 +73,7 @@ header {
 }
 
 #banner-left {
+    display: inline-flex;
     position: absolute;
     z-index: 1;
     border-top: 0px solid transparent;
@@ -87,6 +83,11 @@ header {
     background: linear-gradient(60deg, #1F4D7F, #306084 65%, #8C9C89 99%);
     padding: 2rem 1rem;
     color: #fff;
+}
+
+#banner-right {
+    display: inline-flex;
+    width: 100%;
 }
 
 .heading {
@@ -147,7 +148,11 @@ footer a {
 }
 
 #socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     margin-right: 1em;
+    width: 100%;
 }
 
 button {
@@ -223,6 +228,13 @@ button#signup {
 .dollarsign {
     font-size: 0.8rem;
     vertical-align: text-top;
+}
+
+#about-2 {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 @media (max-width: 600px) {
