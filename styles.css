@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -6,24 +12,18 @@ html {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100vw;
-    margin: 0 auto;
-}
-
-main {
-    margin: 1rem;
+    margin: 0;
 }
 
 header ul {
     list-style: none;
-    padding: 0.25em 0;
-    margin: 0.25em;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     display: inline-flex;
 }
 
@@ -34,22 +34,28 @@ header ul {
     padding: 1rem;
 }
 
-#header-right {
+/* #header-right {
     max-height: 8vh;
-}
-
-/* .header-btns {
-    height: 3rem;
 } */
+
+.header-btns button {
+    max-height: 50%;
+    min-height: 2rem;
+}
 
 img#hero {
     position: relative;
     z-index: -1;
-    width: 100%;
+    width: 100vw;
+}
+
+.about p {
+    margin: 0 auto;
 }
 
 img.about {
-    width: 50%;
+    max-width: 50vw;
+    max-height: 30vh;
 }
 
 .logo {
@@ -60,27 +66,46 @@ img.about {
 }
 
 header {
-    background: linear-gradient(45deg, #1B4369, #3E8DBE);
-    width: 100%;
+    background: linear-gradient(45deg, #1b4369, #3e8dbe);
+    width: 100vw;
     margin-bottom: -5px;
     box-shadow: 2px 1px 6px #323232;
 }
 
-.hero-banner {
-    display: inline-block;
-    height: 40vh;
+/* .hero-banner {
+    display: inline;
+} */
+
+.hero-banner img {
+    display: block;
+    object-fit: cover;
+    max-height: 50vh;
     width: 100vw;
+}
+
+#banner-logo {
+    max-width: 200px;
+    object-fit: contain;
 }
 
 #banner-left {
     display: inline-flex;
     position: absolute;
     z-index: 1;
-    border-top: 0px solid transparent;
-    border-right: 0px solid transparent;
-    /* height: 100%; */
+    background: linear-gradient(
+        to top right,
+        #1f4d7f,
+        #306084 65%,
+        #8c9c89 99%
+    );
+    /* background-color: #1F4D7F; */
+    /* border-bottom: 50px solid #1F4D7F; */
+    /* border-right: 25px solid transparent; */
+    /* border-image: linea/r-gradient(to top right, #1F4D7F, #306084 65%, #8C9C89 99%); */
+    /* height: 0;
+	height: 200px;
+	width: 125px; */
     width: 40vw;
-    background: linear-gradient(60deg, #1F4D7F, #306084 65%, #8C9C89 99%);
     padding: 2rem 1rem;
     color: #fff;
 }
@@ -88,6 +113,29 @@ header {
 #banner-right {
     display: inline-flex;
     width: 100%;
+}
+
+form#sign-up {
+    margin: 0 auto;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 30vw;
+    font-size: 1.15rem;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+#sign-up input {
+    margin: 0.5rem;
+    padding: 0.25rem;
+    background-color: #5b88af;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 .heading {
@@ -98,7 +146,7 @@ header {
     margin: 0.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    font-family: "Bebas Neue", Impact, 'Arial Narrow Bold', sans-serif;
+    font-family: "Bebas Neue", Impact, "Arial Narrow Bold", sans-serif;
     letter-spacing: 0.05rem;
 }
 
@@ -106,7 +154,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #1B4369;
+    background-color: #1b4369;
     color: #fff;
     padding: 1rem;
     font-size: 0.7rem;
@@ -142,7 +190,7 @@ footer a {
 
 #socials img {
     border-radius: 100px;
-    height: 100%;
+    height: 50%;
     vertical-align: middle;
     padding: 0;
 }
@@ -151,8 +199,9 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 1em;
+    align-items: center;
     width: 100%;
+    margin-right: 1rem;
 }
 
 button {
@@ -162,23 +211,26 @@ button {
     border: none;
 }
 
-button#volunteer {
-    background-color: #EFBA43;
-    color: #001E50;
+button#volunteer,
+button#donate,
+button#signup {
     text-transform: uppercase;
 }
 
+button#volunteer {
+    background-color: #efba43;
+    color: #001e50;
+}
+
 button#donate {
-    background-color: #B32A36;
+    background-color: #b32a36;
     color: #fff;
-    text-transform: uppercase;
 }
 
 button#signup {
     width: 30vw;
-    background-color: #88D4FB;
-    color: #10274C;
-    text-transform: uppercase;
+    background-color: #88d4fb;
+    color: #10274c;
 }
 
 .rounded {
@@ -186,7 +238,12 @@ button#signup {
 }
 
 .donate {
-    background: linear-gradient(80deg, #1F4D7F 25%, #23558C 75%, #3D687A 90%);
+    background: linear-gradient(
+        to top right,
+        #1f4d7f 25%,
+        #23558c 75%,
+        #3d687a 90%
+    );
     position: relative;
     margin: 0 auto;
     max-width: 70vw;
@@ -209,9 +266,9 @@ button#signup {
 
 .donations-btn {
     width: 14rem;
-    background-color: #183E66;
+    background-color: #183e66;
     color: #fff;
-    border: 3px solid #89D5FB;
+    border: 3px solid #89d5fb;
     font-size: 1.4rem;
 }
 
@@ -220,9 +277,9 @@ button#signup {
 }
 
 .active {
-    background-color: #EFBA43;
-    color: #183E66;
-    border-color: #183E66;
+    background-color: #efba43;
+    color: #183e66;
+    border-color: #183e66;
 }
 
 .dollarsign {
@@ -237,8 +294,63 @@ button#signup {
     align-items: flex-end;
 }
 
-@media (max-width: 600px) {
-    body {
-        margin: 0 1rem;
+#mobile-nav {
+    display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 0 auto;
+        width: 100vw !important;
+        font-size: 1.5rem;
     }
+
+    .header {
+        display: inline-block;
+        width: 100vw;
+        margin-bottom: 1rem;
+    }
+
+    .socials,
+    .header-btns,
+    .hero-banner {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 90px;
+    }
+
+    #about {
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    .donate {
+        width: 100vw;
+    }
+
+    .legal {
+        position: unset;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
