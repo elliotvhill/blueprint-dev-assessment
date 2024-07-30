@@ -59,6 +59,7 @@ img.about {
     display: flex;
     align-items: flex-start;
     max-width: 20vw;
+    max-height: 80px;
 }
 
 header {
@@ -81,7 +82,8 @@ header {
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
-    margin: 1rem;
+    margin: 0.5rem;
+    margin-bottom: 1rem;
     font-weight: bold;
     font-family: "Bebas Neue", Impact, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.05rem;
@@ -169,8 +171,8 @@ button#signup {
 .donate {
     width: 70vw;
     margin: 0 auto;
-    padding: 2rem 4rem;
-    background: linear-gradient(60deg, #1F4D7F, #306084 65%, #8C9C89 99%);
+    padding: 1rem 4rem;
+    background: linear-gradient(80deg, #1F4D7F 25%, #23558C 75%, #3D687A 90%);
 }
 
 #donations-btns {
@@ -192,10 +194,26 @@ button#signup {
     background-color: #183E66;
     color: #fff;
     border: 3px solid #89D5FB;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+}
+
+.donations-btn:hover {
+    box-shadow: 0 0 4px #fff;
+}
+
+.active {
+    background-color: #EFBA43;
+    color: #183E66;
+    border-color: #183E66;
 }
 
 .dollarsign {
     font-size: 0.8rem;
     vertical-align: text-top;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0 1rem;
+    }
 }
