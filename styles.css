@@ -44,6 +44,22 @@ header ul {
     justify-content: flex-end;
 }
 
+.volunteer-btn, .donate-btn, .signup-btn {
+    text-transform: uppercase;
+    border: none;
+    padding: 0.5rem;
+}
+
+.volunteer-btn {
+    background-color: #efba43;
+    color: #001e50;
+}
+
+.donate-btn {
+    background-color: #b32a36;
+    color: #fff;
+}
+
 form#sign-up {
     margin: 0 auto;
     display: inline-flex;
@@ -52,11 +68,19 @@ form#sign-up {
     justify-content: center;
     max-width: 30vw;
     font-size: 1.15rem;
+    padding: 1rem;
 }
+
+
 
 ::placeholder {
     color: #fff;
     opacity: 1;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .logo {
@@ -68,7 +92,7 @@ form#sign-up {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: linear-gradient(60deg, #1b4369, #3e8dbe);
+    /* background: linear-gradient(60deg, #1b4369, #3e8dbe); */
     width: 100vw;
 }
 
@@ -78,6 +102,7 @@ form#sign-up {
     justify-content: flex-start;
     align-items: flex-start;
     position: absolute;
+    z-index: 1;
     width: 50vw;
 }
 
@@ -96,11 +121,89 @@ form#sign-up {
     max-width: 50vw;
 }
 
+form, .signup {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #5b88af;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
 .banner-right {
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-end;
     /* background-image: url("https://i.imgur.com/iWBrAVV.png"); */
+}
+
+#hero-banner-img {
+    position: relative;
+    z-index: 0;
+}
+
+.donate-section {
+    background: linear-gradient(
+        to top right,
+        #1f4d7f 25%,
+        #23558c 75%,
+        #3d687a 90%
+    );
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.donate-section > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 40vw;
+}
+
+.donations-heading {
+    color: #fff;
+}
+
+#donations-btns {
+    list-style: none;
+    padding-left: 0;
+}
+
+.donations-btns {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.donations-btn {
+    width: 14rem;
+    background-color: #183e66;
+    color: #fff;
+    border: 3px solid #89d5fb;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.donations-btn:hover {
+    box-shadow: 0 0 4px #fff;
+}
+
+.active {
+    background-color: #efba43;
+    color: #183e66;
+    border-color: #183e66;
+}
+
+.dollarsign {
+    font-size: 0.8rem;
+    vertical-align: text-top;
 }
 
 .rounded {
@@ -118,7 +221,53 @@ form#sign-up {
     max-width: 40vw;
 }
 
+.about-section {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    max-width: 60vw;
+}
 
+.about {
+    margin: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1b4369;
+    color: #fff;
+    padding: 2rem;
+    font-size: 0.7rem;
+    height: 20vh;
+}
+
+#disclaimer {
+    border: 2px solid #fff;
+    padding: 0.5rem 3rem;
+}
+
+.legal {
+    display: inline-block;
+    position: relative;
+    bottom: 0px;
+    left: 180px;
+    margin-top: -10px;
+}
+
+footer a {
+    color: #fff;
+}
+
+#footer-right {
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+#footer-left {
+    align-items: flex-start;
+    align-self: center;
+}
 
 
 /* ----------- */
