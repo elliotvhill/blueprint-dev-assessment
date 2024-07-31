@@ -32,272 +32,132 @@
     <body>
         <header>
             <div class="header">
-                <div
-                    id="header-left"
-                    class="header"
-                >
-                    <img
-                        id="header-logo"
-                        src="source-files/SamanthaHall_Logo_reversed.png"
-                        alt="Saantha Hall Democrat for Senate logo"
-                        class="logo"
-                    />
+                <div class="header-left">
+                    <img src="source-files/SamanthaHall_Logo_reversed.png" alt="Saantha Hall Democrat for Senate logo" class="logo-header logo" id="header-logo" />
                     <!-- <img id="header-logo" src="https://i.imgur.com/IlIX4Lf.png" alt="Saantha Hall Democrat for Senate logo" class="logo" /> -->
                 </div>
-                <div
-                    id="header-right"
-                    class="header mobile-hidden"
-                >
-                    <ul
-                        id="socials"
-                        class="mobile-hidden"
-                    >
+                <div class="header-right mobile-hidden">
+                    <ul class="socials mobile-hidden">
                         <li class="header-btns mobile-hidden">
-                            <button
-                                id="volunteer"
-                                class="rounded"
-                            >
-                                Volunteer
-                            </button>
+                            <button class="rounded volunteer-btn">Volunteer</button>
                         </li>
                         <li class="header-btns mobile-hidden">
-                            <button
-                                id="donate-btn"
-                                class="rounded"
-                            >
-                                Donate
-                            </button>
+                            <button class="rounded donate-btn">Donate</button>
                         </li>
-                        <li
-                            id="facebook"
-                            class="socials"
-                        >
-                            <a
-                                href="https://www.facebook.com"
-                                target="_blank"
-                                class="socials"
-                                ><img
-                                    id="facebook"
-                                    class="socials"
-                                    src="source-files/Social-icons/Facebook.svg"
-                                    alt="A round, white Facebook logo"
-                            />
+                        <li class="socials">
+                            <a href="https://www.facebook.com" target="_blank" class="socials facebook-link">
+                                <img class="socials facebook-btn" src="source-files/Social-icons/Facebook.svg" alt="A round, white Facebook logo" />
                             <!-- <i class="fa-brands fa-facebook socials" style="color: #ffffff;"></i> -->
-                        </a>
+                            </a>
                         </li>
-                        <li
-                            id="twitter"
-                            class="socials"
-                        >
-                            <a
-                                href="https://www.x.com"
-                                target="_blank"
-                                class="socials"
-                                ><img
-                                    id="twitter"
-                                    class="socials"
-                                    src="source-files/Social-icons/Twitter.svg"
-                                    alt="A round, white Twitter logo"
-                            />
+                        <li class="socials">
+                            <a href="https://www.x.com" target="_blank" class="socials twitter-link">
+                                <img class="socials twitter-btn" src="source-files/Social-icons/Twitter.svg" alt="A round, white Twitter logo" />
                             <!-- <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i> -->
-                        </a>
+                            </a>
                         </li>
-                        <li
-                            id="instagram"
-                            class="socials"
-                        >
-                            <a
-                                href="https://www.instagram.com"
-                                target="_blank"
-                                class="socials"
-                                ><img
-                                    id="instagram"
-                                    class="socials"
-                                    src="source-files/Social-icons/IG.png"
-                                    alt="A round, white Instagram logo"
-                            />
+                        <li class="socials">
+                            <a href="https://www.instagram.com" target="_blank" class="socials instagram-link">
+                                <img class="socials instagram-btn" src="source-files/Social-icons/IG.png" alt="A round, white Instagram logo" />
                             <!-- <i class="fa-brands fa-instagram socials" style="color: #ffffff;"></i> -->
-                        </a>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div id="mobile-nav">
-                    <i
-                        class="fa-solid fa-bars"
-                        style="color: #ffffff"
-                        id="ham-menu"
-                        onclick="showMobileMenu()"
-                    ></i>
+                    <i class="fa-solid fa-bars" style="color: #ffffff" id="moble-menu" onclick="showMobileMenu()"></i>
                 </div>
             </div>
         </header>
         <div class="hero-banner">
-            <div
-                id="banner-left"
-                class="banner-left"
-            >
-                <img
-                    id="banner-logo"
-                    src="source-files/SamanthaHall_Logo_reversed.png"
-                    alt="Saantha Hall Democrat for Senate logo"
-                    class="logo mobile-hidden"
-                />
+            <div class="banner-left">
+                <img src="source-files/SamanthaHall_Logo_reversed.png" alt="Saantha Hall Democrat for Senate logo" class="banner-logo logo mobile-hidden" />
                 <!-- <img id="banner-logo" src="https://i.imgur.com/IlIX4Lf.png" alt="Saantha Hall Democrat for Senate logo" class="logo mobile-hidden" /> -->
-                <div id="form-container" class="hero-banner">
-                    <form
-                        method="post"
-                        action="https://docs.google.com/spreadsheets/d/1-ofXjoygbe72LdGeEDxAgTFOdb1UL4DLWRQUyHxOkTY/edit"
-                        id="sign-up"
-                    >
-                        <h2
-                            class="heading"
-                            id="contact"
-                            >Stay in touch<span class="mobile-hidden"> with Samantha</span
-                            ></h2
-                        >
-                        <label for="email"
-                            ><input
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="Email"
-                        /></label>
-                        <label for="phone"
-                            ><input
-                                type="text"
-                                name="phone"
-                                id="phone"
-                                placeholder="Phone"
-                        /></label>
-                        <label for="zip-code"
-                            ><input
-                                type="text"
-                                name="zip-code"
-                                id="zip-code"
-                                placeholder="ZIP"
-                        /></label>
-                        <button
-                            id="signup-btn"
-                            class="rounded"
-                            type="submit"
-                            disabled
-                        >
-                            Sign Up
-                        </button>
+                <div class="hero-banner form-container">
+                    <form id="signup" method="post" action="https://docs.google.com/spreadsheets/d/1-ofXjoygbe72LdGeEDxAgTFOdb1UL4DLWRQUyHxOkTY/edit">
+                        <h2 class="heading contact-heading">Stay in touch<span class="contact-heading mobile-hidden"> with Samantha</span></h2>
+                        <label for="email">
+                            <input type="email" name="email" id="email" placeholder="Email" />
+                        </label>
+                        <label for="phone">
+                            <input type="text" name="phone" id="phone" placeholder="Phone" />
+                        </label>
+                        <label for="zip-code">
+                            <input type="text" name="zip-code" id="zip-code" placeholder="ZIP" />
+                        </label>
+                        <!-- TODO: enable signup btn for prod -->
+                        <button id="signupBtn" class="rounded signup-btn" type="submit" disabled>Sign Up</button>
                     </form>
                 </div>
             </div>
-            <div
-                id="banner-right"
-                class="banner-right hero-banner"
-            >
-                <img
-                    id="hero"
-                    src="source-files/hero.png"
-                    alt="A photo of Senate Candidate Samantha Hall in a black suit in front of a riverside cityscape."
-                />
+            <div class="banner-right">
+                <img id="hero-banner-img" src="source-files/hero.png" alt="A photo of Senate Candidate Samantha Hall in a black suit in front of a riverside cityscape." />
                 <!-- <img id="hero" src="https://i.imgur.com/iWBrAVV.png" alt="A photo of Senate Candidate Samantha Hall in a black suit in front of a riverside cityscape." /> -->
             </div>
         </div>
-        <main>
-            <section id="donate">
-                <div class="donate">
-                    <h2
-                        class="heading"
-                        id="donations"
-                        >Donate to support<span class="mobile-hidden"> Samantha's campaign</span></h2
-                    >
+        <main id="main">
+            <section id="donate-section">
+                <div class="donate-section">
+                    <h2 class="donations-heading heading">Donate to support<span class="mobile-hidden"> Samantha's campaign</span></h2>
                     <ul id="donations-btns">
                         <li>
-                            <button
-                                class="donations-btn mobile-hidden"
-                                id="donate-btn-1"
-                            >
+                            <button class="donations-btn mobile-hidden" id="donate-btn-1">
                                 <span class="dollarsign">$ </span>25
                             </button>
                         </li>
                         <li>
-                            <button
-                                class="donations-btn"
-                                id="donate-btn-2"
-                            >
-                                Other
+                            <button class="donations-btn" id="donate-btn-2">Other
                             </button>
                         </li>
                         <li>
-                            <button
-                                class="donations-btn active"
-                                id="donate-btn-3"
-                            >
+                            <button class="donations-btn active" id="donate-btn-3">
                                 <span class="dollarsign">$ </span>50
                             </button>
                         </li>
                         <li>
-                            <button
-                                class="donations-btn mobile-hidden"
-                                id="donate-btn-4"
-                            >
+                            <button class="donations-btn mobile-hidden" id="donate-btn-4">
                                 <span class="dollarsign">$ </span>100
                             </button>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section id="about" class="about">
-                <h2
-                    class="heading about"
-                    id="about-heading"
-                    >Meet Samantha</h2
-                >
-                <img
-                    id="about-1"
-                    src="source-files/about-photo_2.png"
-                    alt="A blue user icon superimposed over a blurred green background."
-                    class="about"
-                />
-                <!-- <img id="about-1" src="https://i.imgur.com/WLhcI4t.png" alt="A blue user icon superimposed over a blurred green background." class="about" /> -->
-                <p class="about">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Impedit deserunt distinctio dolore reiciendis id nihil
-                    praesentium labore, culpa magni voluptates dolor obcaecati a
-                    tenetur, expedita hic, error provident. Quo, laudantium.
-                </p>
-                <p class="about">
-                    Doloremque quisquam voluptas aliquam architecto quo
-                    molestias nulla quasi, ex velit quod facere voluptatibus
-                    laudantium eveniet? Quia eligendi vel impedit suscipit sunt,
-                    nihil dolores. Eius deserunt molestiae minima architecto
-                    voluptas!
-                </p>
-                <img
-                    src="source-files/about-photo_1.jpg"
-                    alt="A group of four colleagues chatting in front of a spiral staircase. One is seated on a desk, one is in a wheelchair, one is seated in an office chair, and one is standing."
-                    id="about-2"
-                    class="about"
-                />
-                <!-- <img src="https://i.imgur.com/EU05Xgt.jpg" alt="A group of four colleagues chatting in front of a spiral staircase. One is seated on a desk, one is in a wheelchair, one is seated in an office chair, and one is standing." id="about-2" class="about" /> -->
+            <section id="about-section">
+                <div class="about-sec">
+                    <h2 class="about-heading heading">Meet Samantha</h2>
+                    <img src="source-files/about-photo_2.png" alt="A blue user icon superimposed over a blurred green background." class="about-img" id="about-img-1" />
+                    <!-- <img id="about-1" src="https://i.imgur.com/WLhcI4t.png" alt="A blue user icon superimposed over a blurred green background." class="about" /> -->
+                    <p class="about" id="about-p1">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Impedit deserunt distinctio dolore reiciendis id nihil
+                        praesentium labore, culpa magni voluptates dolor obcaecati a
+                        tenetur, expedita hic, error provident. Quo, laudantium.
+                    </p>
+                    <p class="about" id="about-p2">
+                        Doloremque quisquam voluptas aliquam architecto quo
+                        molestias nulla quasi, ex velit quod facere voluptatibus
+                        laudantium eveniet? Quia eligendi vel impedit suscipit sunt,
+                        nihil dolores. Eius deserunt molestiae minima architecto
+                        voluptas!
+                    </p>
+                    <img src="source-files/about-photo_1.jpg" alt="A group of four colleagues chatting in front of a spiral staircase. One is seated on a desk, one is in a wheelchair, one is seated in an office chair, and one is standing." class="about-img" id="about-img-2" />
+                    <!-- <img src="https://i.imgur.com/EU05Xgt.jpg" alt="A group of four colleagues chatting in front of a spiral staircase. One is seated on a desk, one is in a wheelchair, one is seated in an office chair, and one is standing." id="about-2" class="about" /> -->
+                </div>
             </section>
         </main>
         <footer>
-            <div id="footer-left">
-                <img
-                    id="footer-logo"
-                    src="source-files/SamanthaHall_Logo_reversed.png"
-                    alt="Samantha Hall Democrat for Senate logo"
-                    class="logo"
-                />
+            <div class="footer" id="footer-left">
+                <img src="source-files/SamanthaHall_Logo_reversed.png" alt="Samantha Hall Democrat for Senate logo" class="logo-footer logo" id="footer-logo" />
                 <!-- <img id="footer-logo" src="https://i.imgur.com/IlIX4Lf.png" alt="Samantha Hall Democrat for Senate logo" class="logo" /> -->
             </div>
-            <div id="footer-right">
+            <div class="footer" id="footer-right">
                 <p id="disclaimer">Paid for by Samantha Hall for Senate</p>
-                <span class="legal"
-                    ><a
-                        href="#"
-                        id="privacy-policy"
-                        >Privacy Policy</a
-                    ></span
-                >
-                <span class="legal"><p id="copyright">&copy; 2024</p></span>
+                <span class="legal">
+                    <a href="#" class="privacy-policy" id="privacy-policy-link">Privacy Policy</a>
+                    </span>
+                <span class="legal">
+                    <p id="copyright">&copy; 2024</p>
+                </span>
             </div>
         </footer>
         <script
