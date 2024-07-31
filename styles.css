@@ -303,18 +303,10 @@ button#signup-btn {
     vertical-align: text-top;
 }
 
-/* #about-2 {
-    display: flex;
-    position: relative;
-    justify-content: flex-end;
-    align-items: flex-end;
-} */
-
 #mobile-nav {
     display: none;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     main {
         margin: 0 auto;
@@ -343,18 +335,10 @@ button#signup-btn {
     section {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
         align-items: center;
-        /* align-content: center; */
         position: relative;
     }
     
-    /* #donate {
-        display: flex;
-        flex-direction: column;
-        margin-top: 4rem;
-    } */
-
     .donate {
         display: flex;
         flex-direction: column;
@@ -394,7 +378,7 @@ button#signup-btn {
     #banner-left,
     #form-container {
         z-index: unset;
-        /* position: relative; */
+        position: relative;
     }
 
     #banner-logo,
@@ -432,7 +416,6 @@ button#signup-btn {
     .about {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-around; */
         position: relative;
         margin-top: 0;
         padding: 0 2rem 1rem 2rem;
@@ -443,17 +426,8 @@ button#signup-btn {
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
     h2#contact > span.mobile-hidden {
         display: none;
     }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }
