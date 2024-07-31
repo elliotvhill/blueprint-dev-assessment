@@ -45,10 +45,10 @@
                 </div>
                 <div
                     id="header-right"
-                    class="header"
+                    class="header mobile-hidden"
                 >
-                    <ul id="socials">
-                        <li class="header-btns">
+                    <ul id="socials" class="mobile-hidden">
+                        <li class="header-btns mobile-hidden">
                             <button
                                 id="volunteer"
                                 class="rounded"
@@ -56,7 +56,7 @@
                                 Volunteer
                             </button>
                         </li>
-                        <li class="header-btns">
+                        <li class="header-btns mobile-hidden">
                             <button
                                 id="donate-btn"
                                 class="rounded"
@@ -122,14 +122,14 @@
             </div>
         </header>
         <div class="hero-banner">
-            <div id="banner-left">
+            <div id="banner-left" class="banner-left">
                 <img
                     id="banner-logo"
                     src="source-files/SamanthaHall_Logo_reversed.png"
                     alt="Saantha Hall Democrate for Senate logo"
-                    class="logo"
+                    class="logo mobile-hidden"
                 />
-                <div id="form-container">
+                <div id="form-container hero-banner">
                     <form
                         method="post"
                         action="https://docs.google.com/spreadsheets/d/1-ofXjoygbe72LdGeEDxAgTFOdb1UL4DLWRQUyHxOkTY/edit"
@@ -138,7 +138,7 @@
                         <heading
                             class="heading"
                             id="contact"
-                            >Stay in touch with Samantha</heading
+                            >Stay in touch <span class="mobile-hidden"> with Samantha</span></heading
                         >
                         <label for="email"
                             ><input
@@ -165,13 +165,14 @@
                             id="signup-btn"
                             class="rounded"
                             type="submit"
+                            disabled
                         >
                             Sign Up
                         </button>
                     </form>
                 </div>
             </div>
-            <div id="banner-right">
+            <div id="banner-right" class="banner-right hero-banner">
                 <img
                     id="hero"
                     src="source-files/hero.png"
@@ -189,7 +190,7 @@
                     >
                     <ul id="donations-btns">
                         <li>
-                            <button class="donations-btn" id="donate-btn-1">
+                            <button class="donations-btn mobile-hidden" id="donate-btn-1">
                                 <span class="dollarsign">$ </span>25
                             </button>
                         </li>
@@ -200,7 +201,7 @@
                             </button>
                         </li>
                         <li>
-                            <button class="donations-btn" id="donate-btn-4">
+                            <button class="donations-btn mobile-hidden" id="donate-btn-4">
                                 <span class="dollarsign">$ </span>100
                             </button>
                         </li>
