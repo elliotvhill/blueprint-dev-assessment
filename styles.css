@@ -220,7 +220,7 @@ button:hover {
 }
 
 button#volunteer,
-button#donate,
+button#donate-btn,
 button#signup-btn {
     text-transform: uppercase;
 }
@@ -230,7 +230,7 @@ button#volunteer {
     color: #001e50;
 }
 
-button#donate {
+button#donate-btn {
     background-color: #b32a36;
     color: #fff;
 }
@@ -318,11 +318,30 @@ button#signup-btn {
         display: inline-block;
         width: 100vw;
         margin-bottom: 1rem;
+        overflow: hidden;
+    }
+
+    #donate {
+        max-width: 30vw;
+    }
+
+    #donate button {
+        max-width: 30vw;
+    }
+    
+    #donations-btns {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
     .socials,
+    #socials,
     .header-btns,
-    .hero-banner {
+    #donate-btn-1,
+    #donate-btn-4,
+    #header-right {
         display: none;
     }
 
@@ -348,11 +367,17 @@ button#signup-btn {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
+    #banner-logo {
+        display: none;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+    #banner-logo {
+        display: none;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
