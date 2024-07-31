@@ -5,7 +5,8 @@ const phoneInput = document.getElementById("phone");
 const zipInput = document.getElementById("zip-code");
 const submitSignupBtn = document.getElementById("signup-btn");
 const scriptURL =
-    "https://script.google.com/macros/s/AKfycbycBWwzvPHaqhoNdxWA3FRt-z9YTEyiic-zvIpkX64RVgP_hpFrAl4qiFq95sc5Oaiesw/exec";
+    // "https://script.google.com/macros/s/AKfycbycBWwzvPHaqhoNdxWA3FRt-z9YTEyiic-zvIpkX64RVgP_hpFrAl4qiFq95sc5Oaiesw/exec";
+    "https://script.google.com/macros/s/AKfycbxqV5OmYHi0yzrTysnlM0yMlK4PgCEY3e3TYXcBznJO/dev";
 
 const showMobileMenu = () => {
     // TODO
