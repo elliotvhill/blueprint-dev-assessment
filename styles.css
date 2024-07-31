@@ -1,8 +1,8 @@
 @media (prefers-reduced-motion: no-preference) {
     * {
-      scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
-  }
+}
 
 html {
     box-sizing: border-box;
@@ -24,7 +24,7 @@ header ul {
 
 .header {
     width: 100vw;
-    display: inline-flex;
+    display: flex;
 }
 
 #header-left {
@@ -33,10 +33,6 @@ header ul {
     align-items: center;
     padding: 1rem;
 }
-
-/* #header-right {
-    max-height: 8vh;
-} */
 
 .header-btns button {
     max-height: 50%;
@@ -49,8 +45,8 @@ img#hero {
     width: 100vw;
 }
 
-.about p {
-    margin: 0 auto;
+.about {
+    margin: 1rem;
 }
 
 img.about {
@@ -68,13 +64,20 @@ img.about {
 header {
     background: linear-gradient(45deg, #1b4369, #3e8dbe);
     width: 100vw;
-    margin-bottom: -5px;
     box-shadow: 2px 1px 6px #323232;
 }
 
-/* .hero-banner {
-    display: inline;
-} */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 .hero-banner img {
     display: block;
@@ -98,20 +101,25 @@ header {
         #306084 65%,
         #8c9c89 99%
     );
-    /* background-color: #1F4D7F; */
-    /* border-bottom: 50px solid #1F4D7F; */
-    /* border-right: 25px solid transparent; */
-    /* border-image: linea/r-gradient(to top right, #1F4D7F, #306084 65%, #8C9C89 99%); */
-    /* height: 0;
-	height: 200px;
-	width: 125px; */
     width: 40vw;
+    height: 38.6vh;
     padding: 2rem 1rem;
     color: #fff;
+
+    /* TODO: */
+        /* Transparent trapezoidal border: */
+            /* border-bottom: 50px solid #1F4D7F; */
+            /* border-right: 25px solid transparent; */
+            /* border-image: linea/r-gradient(to top right, #1F4D7F, #306084 65%, #8C9C89 99%); */
+            /* height: 0;
+            height: 200px;
+            width: 125px; */
 }
 
 #banner-right {
     display: inline-flex;
+    position: relative;
+    float: end;
     width: 100%;
 }
 
@@ -295,12 +303,12 @@ button#signup-btn {
     vertical-align: text-top;
 }
 
-#about-2 {
+/* #about-2 {
     display: flex;
     position: relative;
     justify-content: flex-end;
     align-items: flex-end;
-}
+} */
 
 #mobile-nav {
     display: none;
@@ -314,30 +322,15 @@ button#signup-btn {
         font-size: 1.5rem;
     }
 
+    .mobile-hidden {
+        display: none !important;
+    }
+
     .header {
         display: inline-block;
         width: 100vw;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
         overflow: hidden;
-    }
-
-    #donate {
-        max-width: 30vw;
-    }
-
-    #donate button {
-        max-width: 30vw;
-    }
-    
-    #donations-btns {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .mobile-hidden {
-        display: none;
     }
 
     #mobile-nav {
@@ -347,8 +340,42 @@ button#signup-btn {
         right: 90px;
     }
 
-    .hero-banner, #banner-left {
-        display: inline-flex;
+    section {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        /* align-content: center; */
+        position: relative;
+    }
+    
+    /* #donate {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+    } */
+
+    .donate {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+
+    #donate button {
+        max-width: 30vw;
+    }
+
+    #donations-btns {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-banner,
+    #banner-left {
+        display: flexbox;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -356,30 +383,59 @@ button#signup-btn {
         width: 100vw;
         height: 200px;
     }
+
+    div.banner-left {
+        display: block;
+        z-index: unset;
+        position: absolute;
+    }
     
+    .hero-banner,
+    #banner-left,
+    #form-container {
+        z-index: unset;
+        /* position: relative; */
+    }
+
+    #banner-logo,
+    #form-container {
+        position: absolute;
+    }
+    
+    .hero-banner {
+        margin-top: 0;
+        width: 100vw;
+        overflow: hidden;
+    }
+
     .heading {
         font-size: 2.5rem;
     }
-    
-    .form-container {
+
+    #form-container {
         width: 100vw;
+        display: block;
+        position: relative;
     }
-    
-    form, input, #contact, #signup-btn {
+
+    form,
+    input,
+    #contact,
+    #signup-btn {
         min-width: 60vw;
     }
-    
+
     button#signup {
         width: 100vw;
     }
-    
-    #about {
-        margin: 0 auto;
-        padding: 1rem 2rem;
-    }
-    
-    .donate {
-        width: 100vw;
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        position: relative;
+        margin-top: 0;
+        padding: 0 2rem 1rem 2rem;
     }
 
     .legal {
@@ -387,10 +443,9 @@ button#signup-btn {
     }
 }
 
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-    #banner-logo {
+    h2#contact > span.mobile-hidden {
         display: none;
     }
 }
