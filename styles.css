@@ -4,11 +4,7 @@
     }
 }
 
-
-/* ---------------- */
-/* MAIN BRANCH CSS: */
-
-/* html {
+html {
     box-sizing: border-box;
     font-size: 16px;
 }
@@ -19,6 +15,69 @@ body {
     margin: 0;
 }
 
+.header {
+    background: linear-gradient(45deg, #1b4369, #3e8dbe);
+    width: 100vw;
+    box-shadow: 2px 1px 6px #323232;
+}
+
+.header-left {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 40vw;
+}
+
+.header-right {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 50vw;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.logo {
+    max-width: 20vw;
+    max-height: 80px;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+
+
+
+/* ----------- */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ---------------- */
+/* MAIN BRANCH CSS: */
+/* ---------------- */
+
+/* 
 header ul {
     list-style: none;
     display: flex;
@@ -56,11 +115,6 @@ img.about {
     max-height: 80px;
 }
 
-header {
-    background: linear-gradient(45deg, #1b4369, #3e8dbe);
-    width: 100vw;
-    box-shadow: 2px 1px 6px #323232;
-}
 
 .sr-only {
     position: absolute;
