@@ -91,7 +91,7 @@ header {
 
     /* TODO: */
         /* Transparent trapezoidal border: */
-}
+/* }
 
 form#sign-up {
     margin: 0 auto;
@@ -256,7 +256,7 @@ button#signup-btn {
 
 #mobile-nav {
     display: none;
-}
+} */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -298,4 +298,4 @@ button#signup-btn {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-} */
+}
