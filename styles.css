@@ -336,12 +336,7 @@ button#signup-btn {
         align-items: center;
     }
 
-    .socials,
-    #socials,
-    .header-btns,
-    #donate-btn-1,
-    #donate-btn-4,
-    #header-right {
+    .mobile-hidden {
         display: none;
     }
 
@@ -352,11 +347,37 @@ button#signup-btn {
         right: 90px;
     }
 
+    .hero-banner, #banner-left {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100vw;
+        height: 200px;
+    }
+    
+    .heading {
+        font-size: 2.5rem;
+    }
+    
+    .form-container {
+        width: 100vw;
+    }
+    
+    form, input, #contact, #signup-btn {
+        min-width: 60vw;
+    }
+    
+    button#signup {
+        width: 100vw;
+    }
+    
     #about {
         margin: 0 auto;
         padding: 1rem 2rem;
     }
-
+    
     .donate {
         width: 100vw;
     }
@@ -366,12 +387,6 @@ button#signup-btn {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-    #banner-logo {
-        display: none;
-    }
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -381,7 +396,7 @@ button#signup-btn {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
