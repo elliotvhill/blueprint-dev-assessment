@@ -27,13 +27,6 @@ header ul {
     display: flex;
 }
 
-#header-left {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1rem;
-}
-
 .header-btns button {
     max-height: 50%;
     min-height: 2rem;
@@ -55,8 +48,6 @@ img.about {
 }
 
 .logo {
-    display: flex;
-    align-items: flex-start;
     max-width: 20vw;
     max-height: 80px;
 }
@@ -79,18 +70,6 @@ header {
     border: 0;
 }
 
-.hero-banner img {
-    display: block;
-    object-fit: cover;
-    max-height: 50vh;
-    width: 100vw;
-}
-
-#banner-logo {
-    max-width: 200px;
-    object-fit: contain;
-}
-
 #banner-left {
     display: inline-flex;
     position: absolute;
@@ -108,19 +87,6 @@ header {
 
     /* TODO: */
         /* Transparent trapezoidal border: */
-            /* border-bottom: 50px solid #1F4D7F; */
-            /* border-right: 25px solid transparent; */
-            /* border-image: linea/r-gradient(to top right, #1F4D7F, #306084 65%, #8C9C89 99%); */
-            /* height: 0;
-            height: 200px;
-            width: 125px; */
-}
-
-#banner-right {
-    display: inline-flex;
-    position: relative;
-    float: end;
-    width: 100%;
 }
 
 form#sign-up {
@@ -146,17 +112,6 @@ form#sign-up {
     border: 1px solid #fff;
 }
 
-.heading {
-    display: block;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2rem;
-    margin: 0.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    font-family: "Bebas Neue", Impact, "Arial Narrow Bold", sans-serif;
-    letter-spacing: 0.05rem;
-}
 
 footer {
     display: flex;
@@ -219,11 +174,7 @@ button {
     border: none;
 }
 
-button:hover {
-    box-shadow: 0 0 4px #fff;
-}
-
-.socials img:hover {
+button:hover, .socials img:hover {
     box-shadow: 0 0 4px #fff;
 }
 
@@ -260,10 +211,6 @@ button#signup-btn {
         #23558c 75%,
         #3d687a 90%
     );
-    position: relative;
-    margin: 0 auto;
-    max-width: 70vw;
-    padding: 1rem 4rem;
 }
 
 #donations-btns {
@@ -303,13 +250,6 @@ button#signup-btn {
     vertical-align: text-top;
 }
 
-/* #about-2 {
-    display: flex;
-    position: relative;
-    justify-content: flex-end;
-    align-items: flex-end;
-} */
-
 #mobile-nav {
     display: none;
 }
@@ -338,108 +278,6 @@ button#signup-btn {
         position: absolute;
         top: 50px;
         right: 90px;
-    }
-
-    section {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: space-between; */
-        align-items: center;
-        /* align-content: center; */
-        position: relative;
-    }
-    
-    /* #donate {
-        display: flex;
-        flex-direction: column;
-        margin-top: 4rem;
-    } */
-
-    .donate {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 100%;
-    }
-
-    #donate button {
-        max-width: 30vw;
-    }
-
-    #donations-btns {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .hero-banner,
-    #banner-left {
-        display: flexbox;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 100vw;
-        height: 200px;
-    }
-
-    div.banner-left {
-        display: block;
-        z-index: unset;
-        position: absolute;
-    }
-    
-    .hero-banner,
-    #banner-left,
-    #form-container {
-        z-index: unset;
-        /* position: relative; */
-    }
-
-    #banner-logo,
-    #form-container {
-        position: absolute;
-    }
-    
-    .hero-banner {
-        margin-top: 0;
-        width: 100vw;
-        overflow: hidden;
-    }
-
-    .heading {
-        font-size: 2.5rem;
-    }
-
-    #form-container {
-        width: 100vw;
-        display: block;
-        position: relative;
-    }
-
-    form,
-    input,
-    #contact,
-    #signup-btn {
-        min-width: 60vw;
-    }
-
-    button#signup {
-        width: 100vw;
-    }
-
-    .about {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: space-around; */
-        position: relative;
-        margin-top: 0;
-        padding: 0 2rem 1rem 2rem;
-    }
-
-    .legal {
-        position: unset;
     }
 }
 
